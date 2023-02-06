@@ -42,7 +42,8 @@ apiInstance.sendTransacEmail(sendSmtpEmail)
 .catch((error) => console.error(error))
 
 
-// Receive data from the five required webhooks
+// Receive data from the five required webhooks. Ngrok is hosting a live server
+// and the base url is in my account. 
 app.post(`/delivered`, (req, res) => {
     let body = req.body
     console.log(body)  
